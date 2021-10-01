@@ -1,0 +1,103 @@
+html, body {
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(215, 220, 224, 0.699);
+    line-height:1.15;
+    -webkit-text-size-adjust:100%
+    
+}
+
+/***** header *****/
+a{
+    color:inherit;
+    text-decoration:inherit
+}  
+/***** End header *****/
+
+
+.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    --bg-opacity: 1;
+    background-color: rgba(255, 255, 255, 0.911);
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    width: 50%;
+    --text-opacity: 1;
+    color: #828282;
+    color: rgba(130, 130, 130, var(--text-opacity));
+    border-width: 1px;
+    --border-opacity: 1;
+    border-color: #8d8b8b;
+    border-color: rgba(224, 224, 224, var(--border-opacity));
+    border-radius: 8px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 14px;
+}
+
+#text-title {
+    margin-left: 25%;
+}
+
+#category {
+    margin-left: 25%;
+}
+
+/* footer {
+    background: #eee;
+    padding: 20px;
+    text-align: center;
+} */
+
+.header {
+    padding: 15px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+  }
+
+  /* Increase the font size of the <h1> element */
+  .header h1 {
+    font-size: 30px;
+  }
+
+.btn {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.form-inline {
+    margin-left: 45%;
+}
+
+
+#input_search {
+    margin-right: 5px !important;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+#btn_search {
+    margin-bottom: 5%;
+    margin-top: 0,5%;
+
+    padding: 5px;
+
+}
+
+#btn_inputform {
+    margin-bottom: 5%;
+    margin-top: 0,5%;
+    padding: 5px;
+
+}
