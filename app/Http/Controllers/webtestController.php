@@ -11,7 +11,7 @@ class webtestController extends Controller
 
         $form = new inputform();
 
-        $form->code = $request->code;
+        $form->code = $request->code.$request->year."/".$request->category."/".$request->title."/";
         $form->year = $request->year;
         $form->category = $request->category;
         $form->title = $request->title;
