@@ -15,7 +15,6 @@ class CreateFormTable extends Migration
     {
         Schema::create('form', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
             $table->string('code');
             $table->integer('year');
             $table->string('category');
