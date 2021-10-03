@@ -12,7 +12,7 @@ class inputform extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        //'code',
+        'code',
         'year',
         'category',
         'title',
