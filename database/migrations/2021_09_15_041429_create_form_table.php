@@ -21,7 +21,7 @@ class CreateFormTable extends Migration
             $table->string('title');
             $table->string('topic');
             $table->string('subtopic');
-            $table->string('refrence');
+            $table->string('reference')->nullable();
         });
     }
 

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class inputform extends Model
 {
-    protected $table = 'forminput';
+    protected $table = 'form';
 
     public $timestamps = false;
 
