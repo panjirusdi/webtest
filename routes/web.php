@@ -25,3 +25,7 @@ Route::get('/form', function () {
 
 Route::get('/', 'App\Http\Controllers\webtestController@index');
 Route::post('inputform', 'App\Http\Controllers\webtestController@store');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

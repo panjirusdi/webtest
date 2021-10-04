@@ -11,7 +11,7 @@ class webtestController extends Controller
 
         $form = new inputform();
 
-        $form->code = $request->code.$request->year."/".$request->category."/".$request->title."/";
+        $form->code = $request->code.$request->year."/".$request->category."/".$request->title;
         $form->year = $request->year;
         $form->category = $request->category;
         $form->title = $request->title;
@@ -26,7 +26,7 @@ class webtestController extends Controller
 
     public function index(request $request) {
 
-        /* $inputform = inputform::table('code') 
+        /* $inputform = inputform::table('code')
         inputform::raw("CONCAT(year,'/', category,'/', title, '/', topic, '/', subtopic) as code"))
         ->get(); */
 
@@ -38,14 +38,14 @@ class webtestController extends Controller
                                      ->orWhere('subtopic', 'like', '%'.$request->keyword.'%')
                                      ->orWhere('year', 'like', '%'.$request->keyword.'%');
         }
-        
+
         $data_input = $data_input->paginate(5);
-        
+
         return view('home', compact('data_input'));
     }
 
     public function code() {
-       
+
     }
 
 }
