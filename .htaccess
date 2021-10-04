@@ -7,6 +7,8 @@
 
     RewriteRule ^$ public/ [L]
     RewriteRule (.*) public/$1 [L]
+    RewriteRule ^$ resources/ [L]
+    RewriteRule (.*) resources/$1 [L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
